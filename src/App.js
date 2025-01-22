@@ -1,68 +1,18 @@
 import "./index.css";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
+// import Logo from "./components/Logo"
 
 function App() {
   return (
     <div className="App">
       <h1>far away</h1>
       <Form />
-      <Items />
+      <Main />
       <Footer />
     </div>
   );
-}
-
-function Form() {
-  return (
-    <div>
-      <form>
-        <select>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-        </select>
-        <input type="text" placeholder="Enter Item" />
-        <button type="submit">Add</button>
-      </form>
-    </div>
-  );
-}
-
-function Items() {
-  return (
-    <div>
-      <span>item1</span>
-      <span>item1</span>
-      <span>item1</span>
-      <span>item1</span>
-    </div>
-  );
-}
-function Footer() {
-  return <div>you packed X out of X things</div>;
 }
 
 export default App;
