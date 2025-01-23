@@ -1,32 +1,9 @@
 export default function Form() {
   return (
-    <div>
+    <div className="form">
+      what do you need for trip??😊
       <form>
         <select>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
-          <option value="" key="">
-            1
-          </option>
           <option value="" key="">
             1
           </option>
