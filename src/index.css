@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.logo {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 125, 70);
+    font-size: 2rem;
+}
+
+.form {
+    background-color: aqua;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form {
+    display: inline;
+    margin: 20px;
+
+}
+
+.form form input,
+.form form select {
+    padding: 5px;
+    border: 2px #111 solid;
+    background-color: #b7fff4;
+    color: rgb(0, 0, 0);
+}
+
+.form form button {
+    padding: 8px;
+    margin-left: 30px;
+    background-color: green;
+    border: 2px red solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.items {
+    background-color: rgb(243, 181, 181);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.items ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+    list-style: none;
+
+}
+
+.items ul li {
+    margin: 20px;
+}
+
+.items ul li span {
+    margin: 0 5px;
+}
+
+.items ul .packed {
+    text-decoration: line-through !important;
+}
+
+.items ul li button {
+    margin: 0 5px;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+}
+
+.footer {
+    background-color: burlywood;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

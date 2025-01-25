@@ -1,14 +1,14 @@
 export default function Form() {
   return (
     <div className="form">
-      what do you need for trip??😊
+      <span>what do you need for trip??😊</span>
       <form>
         <select>
-          <option value="" key="">
+          <option value="1" key="">
             1
           </option>
         </select>
-        <input type="text" placeholder="Enter Item" />
+        <input type="text" placeholder="Enter Item" value="" />
         <button type="submit">Add</button>
       </form>
     </div>
