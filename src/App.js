@@ -3,13 +3,23 @@ import ListItems from "./components/ListItems";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Logo from "./components/Logo";
+import { useState } from "react";
 
 function App() {
+  const [items, setItems] = useState([]);
+
+  function handleItemsOnAdd(item) {
+    setItems((itemList) => [item, ...itemList]);
+  }
+
+  function handleDeleteItem(id) {
+    setItems((items) => items.filter((item) => item.id !== id));
+  }
   return (
     <div className="App">
       <Logo />
-      <Form />
-      <ListItems />
+      <Form onItemAdd={handleItemsOnAdd} />
+      <ListItems itemList={items} onItemDelete={handleDeleteItem} />
       <Footer />
     </div>
   );
