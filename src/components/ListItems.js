@@ -1,30 +1,30 @@
-// const listOfItems = [
-//   { id: 1, discription: "Passbook", quantity: 1, isPacked: true },
-//   { id: 2, discription: "Underwear", quantity: 2, isPacked: false },
-//   { id: 3, discription: "Socks", quantity: 4, isPacked: true },
-//   { id: 4, discription: "shoes", quantity: 2, isPacked: true },
-// ];
 
-export default function ListItems({ itemList, onItemDelete }) {
+export default function ListItems({ itemList, onItemDelete, onToggle }) {
   return (
     <div className="items">
       <ul>
         {itemList.map((item) => {
-          return <Item item={item} onItemDelete={onItemDelete} key={item.id} />;
+          return (
+            <Item
+              item={item}
+              onItemDelete={onItemDelete}
+              onToggle={onToggle}
+              key={item.id}
+            />
+          );
         })}
       </ul>
     </div>
   );
 }
 
-function Item({ item, onItemDelete }) {
+function Item({ item, onItemDelete, onToggle }) {
   function handleDelete(id) {
-    console.log(id);
-
     onItemDelete(id);
   }
   return (
     <li className={item.isPacked ? "packed" : ""}>
+      <input type="checkbox" onChange={() => onToggle(item.id)} />
       <span>{item.quantity}</span>
       {item.discription}
       <button onClick={() => handleDelete(item.id)}>❌</button>
