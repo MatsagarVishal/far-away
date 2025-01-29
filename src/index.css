@@ -54,10 +54,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 300px;
 }
 
-.items ul {
+.items div ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,26 +66,29 @@
     padding: 20px;
     font-size: 20px;
     list-style: none;
-
 }
 
-.items ul li {
+.items div ul li {
     margin: 20px;
 }
 
-.items ul li span {
+.items div ul li span {
     margin: 0 5px;
 }
 
-.items ul .packed {
+.items div ul .packed {
     text-decoration: line-through !important;
 }
 
-.items ul li button {
+.items div ul li button {
     margin: 0 5px;
     padding: 0 5px;
     background: transparent;
     border: none;
+    cursor: pointer;
+}
+
+.items div ul li input {
     cursor: pointer;
 }
 
